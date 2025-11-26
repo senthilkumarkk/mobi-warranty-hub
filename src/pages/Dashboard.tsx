@@ -196,9 +196,18 @@ const Dashboard = () => {
       <div className="container mx-auto px-4 py-6 max-w-7xl">
         <Tabs defaultValue="products" className="w-full">
           <TabsList className="grid w-full grid-cols-3 mb-6">
-            <TabsTrigger value="products">My Products</TabsTrigger>
-            <TabsTrigger value="service">Service Request</TabsTrigger>
-            <TabsTrigger value="support">Support</TabsTrigger>
+            <TabsTrigger value="products" className="gap-2">
+              <Package className="w-4 h-4 text-primary" />
+              My Products
+            </TabsTrigger>
+            <TabsTrigger value="service" className="gap-2">
+              <Wrench className="w-4 h-4 text-accent" />
+              Service Request
+            </TabsTrigger>
+            <TabsTrigger value="support" className="gap-2">
+              <HelpCircle className="w-4 h-4 text-success" />
+              Support
+            </TabsTrigger>
           </TabsList>
 
           {/* My Products Tab */}
