@@ -195,18 +195,27 @@ const Dashboard = () => {
 
       <div className="container mx-auto px-4 py-6 max-w-7xl">
         <Tabs defaultValue="products" className="w-full">
-          <TabsList className="grid w-full grid-cols-3 mb-6 h-auto p-2">
-            <TabsTrigger value="products" className="gap-2 py-4 text-base">
-              <Package className="w-5 h-5 text-primary" />
-              My Products
+          <TabsList className="grid w-full grid-cols-3 mb-6 h-auto p-2 bg-transparent gap-4">
+            <TabsTrigger 
+              value="products" 
+              className="flex-col gap-3 py-6 px-4 h-auto data-[state=active]:bg-card data-[state=active]:shadow-md border border-border bg-card/50"
+            >
+              <Package className="w-10 h-10 text-primary" />
+              <span className="text-sm font-medium">My Products</span>
             </TabsTrigger>
-            <TabsTrigger value="service" className="gap-2 py-4 text-base">
-              <Wrench className="w-5 h-5 text-accent" />
-              Service Request
+            <TabsTrigger 
+              value="service" 
+              className="flex-col gap-3 py-6 px-4 h-auto data-[state=active]:bg-card data-[state=active]:shadow-md border border-border bg-card/50"
+            >
+              <Wrench className="w-10 h-10 text-accent" />
+              <span className="text-sm font-medium">Service Request</span>
             </TabsTrigger>
-            <TabsTrigger value="support" className="gap-2 py-4 text-base">
-              <HelpCircle className="w-5 h-5 text-success" />
-              Support
+            <TabsTrigger 
+              value="support" 
+              className="flex-col gap-3 py-6 px-4 h-auto data-[state=active]:bg-card data-[state=active]:shadow-md border border-border bg-card/50"
+            >
+              <HelpCircle className="w-10 h-10 text-success" />
+              <span className="text-sm font-medium">Support</span>
             </TabsTrigger>
           </TabsList>
 
